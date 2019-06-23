@@ -20,7 +20,7 @@ class App < Sinatra::Base
     answer
     end
 
-  get '/say/:word1/:word2/:word3/:word4/:word5'
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
     @wordone = params[:word1].to_s
     @wordtwo = params[:word2].to_s
     @wordthree = params[:word3].to_s
